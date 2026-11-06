@@ -1,0 +1,6 @@
+/* Site-level tweaks (kept out of engine/). */
+/* Remove the portal entry point entirely: no friend-links / other-worlds list. */
+#portalButton,
+#portalReturn {
+  display: none !important;
+}
