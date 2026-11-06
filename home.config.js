@@ -7,7 +7,7 @@ export default {
   weather: { city: '上海', cityEn: 'Shanghai', latitude: 31.23, longitude: 121.47, timezone: 'Asia/Shanghai' },
   dock: ['blog', 'about', 'mailbox', 'phone'],
   mailbox: { endpoint: '', email: 'hexyans@gmail.com', turnstileSitekey: '' },
-  // No shared directory: the portal stays, but lists no other people's sites.
-  portal: { directory: [] },
+  // The portal's friend links come from our own list (worlds.json).
+  portal: { directory: ['worlds.json'] },
   badge: true,
 };
