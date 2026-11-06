@@ -6,3 +6,5 @@ tools/.check/
 tools/.serve-url
 .impeccable/
 .release/
+*.zip
+.playwright-mcp/
