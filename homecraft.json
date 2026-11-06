@@ -1,7 +1,7 @@
 {
   "version": 1,
   "name": "HexYans's Blog",
-  "url": "",
+  "url": "https://blog.hexyans.com/",
   "logo": "assets/favicon.png",
   "intro": { "zh": "我的学习与折腾记录", "en": "Notes on what I learn and build" },
   "lang": ["zh", "en"],
