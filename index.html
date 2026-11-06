@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="zh-CN">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
@@ -7,11 +7,11 @@
 <!-- The world draws its own day and night. -->
 <meta name="color-scheme" content="only light">
 <meta name="darkreader-lock">
-<title>My Home</title>
-<meta name="description" content="">
+<title>HexYans's Blog</title>
+<meta name="description" content="HexYans 的个人博客 · 记录学习与折腾">
 <meta property="og:type" content="website">
-<meta property="og:title" content="My Home">
-<meta property="og:description" content="">
+<meta property="og:title" content="HexYans's Blog">
+<meta property="og:description" content="HexYans 的个人博客 · 记录学习与折腾">
 <meta property="og:image" content="assets/og.jpg">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="icon" href="assets/favicon.png">
@@ -24,47 +24,63 @@
 }}</script>
 </head>
 <body>
-<main id="world" aria-label="My Home"></main>
+<main id="world" aria-label="HexYans's Blog"></main>
 <div id="loading"><div class="bar"><i></i></div></div>
 
 <section id="pages">
-  <h1 class="plain-title">My Home</h1>
+  <h1 class="plain-title">HexYans's Blog</h1>
 
-  <article class="page" data-station="about">
-    <h2 data-zh="关于我">About me</h2>
-    <div class="about">
-      <div class="about-text" lang="en">
-        <p>Add your introduction</p>
-        <div class="about-foot"><a class="mc-button" href="#contact" data-open="phone">Follow</a><a class="mc-button" href="#mailbox" data-open="mailbox">Mailbox</a></div>
-      </div>
-      <div class="about-text" lang="zh-CN">
-        <p>填写你的介绍</p>
-        <div class="about-foot"><a class="mc-button" href="#contact" data-open="phone">关注</a><a class="mc-button" href="#mailbox" data-open="mailbox">留言</a></div>
+  <article class="page" data-station="blog" data-icon="blog">
+    <h2 data-en="Blog">博客</h2>
+    <div class="placeholder-card">
+      <p data-en="Notes on what I learn, build, and think about.">记录我的学习、折腾和一点点想法。</p>
+      <div class="links">
+        <a href="posts/hello-world.html" target="_blank" rel="noopener"><span data-en="Hello, World">你好，世界</span></a>
+        <a href="posts/writing-guide.html" target="_blank" rel="noopener"><span data-en="How I write here">这里怎么写文章</span></a>
       </div>
     </div>
   </article>
 
-  <article class="page" data-station="blog" data-icon="blog">
-    <h2 data-zh="个人主页">Website</h2>
-    <div class="placeholder-card"><p data-zh="填写你的个人主页链接">Add your website link</p></div>
+  <article class="page" data-station="about">
+    <h2 data-en="About">关于我</h2>
+    <div class="about">
+      <div class="about-text" lang="zh-CN">
+        <p>你好，我是 HexYans。这里是我的一点小世界，欢迎随便逛逛。</p>
+        <div class="about-foot"><a class="mc-button" href="https://github.com/HexYans" target="_blank" rel="noopener">GitHub</a><a class="mc-button" href="#mailbox" data-open="mailbox">留言</a></div>
+      </div>
+      <div class="about-text" lang="en">
+        <p>Hi, I'm HexYans. This is a little world of mine — feel free to look around.</p>
+        <div class="about-foot"><a class="mc-button" href="https://github.com/HexYans" target="_blank" rel="noopener">GitHub</a><a class="mc-button" href="#mailbox" data-open="mailbox">Mailbox</a></div>
+      </div>
+    </div>
+  </article>
+
+  <article class="page" data-station="works">
+    <h2 data-en="Works">作品</h2>
+    <div class="placeholder-card">
+      <p data-en="Things I'm working on — more on GitHub.">一些我在做的东西，更多见 GitHub。</p>
+      <div class="links">
+        <a href="https://github.com/HexYans" target="_blank" rel="noopener">GitHub · HexYans</a>
+      </div>
+    </div>
   </article>
 
   <article class="page" id="contact" data-station="contact">
-    <h2 data-zh="关注">Follow</h2>
-    <p data-zh="填写你的联系方式">Add your contact details</p>
+    <h2 data-en="Follow">关注</h2>
     <ul class="contact">
-      <li data-app="github"><span>GitHub</span><a data-zh="填写 GitHub 链接">Add your GitHub link</a><p></p></li>
+      <li data-app="github"><span>GitHub</span><a href="https://github.com/HexYans" target="_blank" rel="noopener">HexYans</a><p data-en="Code and side projects">代码和小项目</p></li>
+      <li data-app="mail"><span data-en="Email">邮件</span><a href="mailto:hexyans@gmail.com">hexyans@gmail.com</a><p data-en="Say hi">打个招呼</p></li>
     </ul>
   </article>
 
   <article class="page" id="mailbox" data-station="mailbox">
-    <h2 data-zh="留言">Mailbox</h2>
-    <form class="mailbox" method="post" enctype="text/plain">
-      <input name="subject" maxlength="80" required placeholder="Subject" aria-label="Subject (required)" data-zh-placeholder="主题" data-zh-label="主题，必填">
-      <textarea name="message" rows="6" maxlength="1000" required placeholder="Write something" aria-label="Write something" data-zh-placeholder="输入文字" data-zh-label="输入文字"></textarea>
-      <input name="contact" maxlength="120" required autocomplete="email" placeholder="Email or other contact (required)" aria-label="How to reach you (required)" data-zh-placeholder="联系方式（必填，邮箱或微信等）" data-zh-label="联系方式，必填">
+    <h2 data-en="Mailbox">留言</h2>
+    <form class="mailbox" action="mailto:hexyans@gmail.com" method="post" enctype="text/plain">
+      <input name="subject" maxlength="80" required placeholder="主题" aria-label="主题，必填" data-en-placeholder="Subject" data-en-label="Subject (required)">
+      <textarea name="message" rows="6" maxlength="1000" required placeholder="输入文字" aria-label="输入文字" data-en-placeholder="Write something" data-en-label="Write something"></textarea>
+      <input name="contact" maxlength="120" required autocomplete="email" placeholder="联系方式（必填，邮箱或微信等）" aria-label="联系方式，必填" data-en-placeholder="Email or other contact (required)" data-en-label="How to reach you (required)">
       <input class="trap" name="website" tabindex="-1" autocomplete="off" aria-hidden="true">
-      <div class="mailbox-foot"><button class="mc-button" type="submit" data-zh="发送" disabled>Send</button></div>
+      <div class="mailbox-foot"><button class="mc-button" type="submit" data-en="Send">发送</button></div>
       <p class="mailbox-status" role="status" aria-live="polite"></p>
     </form>
   </article>

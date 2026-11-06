@@ -1,0 +1,28 @@
+/* Reading page for blog posts. Standalone: a post only needs this file. */
+:root { color-scheme: light; }
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0;
+  background: #f7f6f2;
+  color: #26282b;
+  font: 17px/1.8 -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+}
+.wrap { max-width: 720px; margin: 0 auto; padding: 48px 22px 96px; }
+.top { display: flex; justify-content: space-between; align-items: center; margin-bottom: 40px; font-size: 14px; }
+.top a { color: #6b6f76; text-decoration: none; }
+.top a:hover { color: #26282b; }
+article h1 { font-size: 32px; line-height: 1.25; margin: 0 0 8px; letter-spacing: -.01em; }
+.meta { color: #8a8f96; font-size: 14px; margin-bottom: 32px; }
+article h2 { font-size: 22px; margin: 40px 0 12px; }
+article h3 { font-size: 18px; margin: 28px 0 8px; }
+article p { margin: 0 0 18px; }
+article a { color: #2f6feb; }
+article ul, article ol { margin: 0 0 18px; padding-left: 1.4em; }
+article li { margin: 6px 0; }
+blockquote { margin: 22px 0; padding: 4px 18px; border-left: 3px solid #d7d3ca; color: #5c6067; }
+code { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-size: .9em; background: #ecebe6; padding: .12em .35em; border-radius: 4px; }
+pre { background: #ecebe6; padding: 16px 18px; border-radius: 10px; overflow-x: auto; }
+pre code { background: none; padding: 0; }
+hr { border: 0; border-top: 1px solid #e3e0d8; margin: 40px 0; }
+@media (max-width: 560px) { body { font-size: 16px; } article h1 { font-size: 26px; } .wrap { padding: 32px 18px 72px; } }
