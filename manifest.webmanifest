@@ -1,0 +1,14 @@
+{
+  "name": "HexYans's Blog",
+  "short_name": "HexYans",
+  "description": "HexYans 的个人博客",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#7fb2e8",
+  "theme_color": "#7fb2e8",
+  "icons": [
+    { "src": "assets/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "assets/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" }
+  ]
+}
