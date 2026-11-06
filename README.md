@@ -1,45 +1,37 @@
-# Homecraft
+# HexYans's Blog
 
-**中文** · [English](README.en.md)
+我的私人博客，基于 Homecraft（Minecraft 风格 3D 个人网站模板）。
 
-## 个人网站即我的世界
+- 线上：<https://blog.hexyans.com>
+- 3D 世界：`world/`（房子、泳池、家具、后山等）
+- 博客文章：`posts/`（每篇一个 HTML）
 
-过去我是个喜欢折腾网站的人，但模板换了又换，总感觉被什么东西困住了。
+## 本地预览
 
-受我的世界、黑客帝国和元宇宙的启发，借助 AI，我把个人网站从二维网页建成了三维世界。
+```sh
+python3 tools/serve.py
+```
 
-这个世界包罗万象，可以自由移动，里面建了篮球场，健身房，工作台，甚至还有昼夜交替和天气系统。
+## 发布
 
-对于二维网页也完全可以内嵌进来，例如按 F 查看。而且得益于方块风的性能开销小，手机也能轻松访问。
+推送到 `main` 后由 GitHub Pages 自动部署（`.github/workflows/pages.yml`）。
+手动打包：`bash tools/build.sh`，产物在 `dist/`。
 
-逛上一圈，像是去朋友家做客了一趟。比起传统的网站，这样的相识或许更让人印象深刻。
+## 写文章
 
-一旦接受了这个设定，就再也回不去传统个人网站了…
+复制 `posts/_template.html` 为新文件，改标题/日期/正文，再到 `index.html` 的
+`data-station="blog"` 卡片里加一条链接。
 
-## 实机截图 [🔗 Terry's Home](https://terryhu.cn)
+## 目录
 
-<p align="center"><img src="docs/images/cover.webp" width="420" alt="封面"></p>
+| 路径 | 作用 |
+|---|---|
+| `index.html` | 卡片内容（关于/博客/作品/联系/留言） |
+| `home.config.js` | 站点设置（名字、皮肤、语言、Dock、留言、传送门） |
+| `homecraft.json` | 对外公开元数据（门户/目录读取） |
+| `world/` | 3D 世界（`layout.js` 数据，`build.js` 搭建） |
+| `posts/` | 博客文章 |
+| `assets/` | 图片、皮肤、图标 |
+| `engine/` | 共享引擎（请勿修改） |
 
-| 篮球场 | 泳池 | 工作台 |
-| :---: | :---: | :---: |
-| <img src="docs/images/terry-court.webp" width="240" alt="篮球场"> | <img src="docs/images/terry-pool.webp" width="240" alt="泳池"> | <img src="docs/images/terry-desk.webp" width="240" alt="工作台"> |
-| **作品展示** | **健身房** | **天气系统** |
-| <img src="docs/images/terry-works.webp" width="240" alt="作品展示"> | <img src="docs/images/terry-gym.webp" width="240" alt="健身房"> | <img src="docs/images/terry-snow.webp" width="240" alt="下雪"> |
-
-## 开始使用
-
-<p align="center"><img src="docs/images/starter.webp" width="640" alt="初始模板"></p>
-
-一行命令 `python3 tools/serve.py`即可运行。项目已内置初始模板、相关提示词与约束。
-
-Terry's Home 完整实现见 [examples/terry-home](examples/terry-home)。
-
-后续更新见[更新指引](engine/UPDATING.md)。
-
-## 传送门 [🔗 申请收录](https://github.com/terryHu7/homecraft/issues/new/choose)
-
-<p align="center"><img src="https://terryhu.cn/share/homecraft-portal.webp" width="640" alt="传送门"></p>
-
-类似传统博客的友链，传送门列表收录了大家的个人网站，方便互相"串门"。
-
-## 友情链接 [🔗 LINUX DO](https://linux.do)
+站点内容与素材均可自行更换。基于 Homecraft，遵循 MIT 许可（见 `LICENSE`）。
