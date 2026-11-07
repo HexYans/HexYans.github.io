@@ -1,4 +1,4 @@
-// One adapter for Homecraft, Terry's original site and the blog plugin.
+// One adapter for Homecraft worlds and the blog plugin.
 // Owner-facing content stays independent of the visitor's appearance.
 import { config } from './config.js';
 import { readSiteInfo, siteText } from './door-metadata.js';

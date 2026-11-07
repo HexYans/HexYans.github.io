@@ -24,7 +24,7 @@ const DEFAULTS = {
   // Published sources for the shared Homecraft directory. Multiple sources
   // use the first valid answer. Keep these URLs aligned with docs/protocol.md.
   portal: {
-    directory: ['https://terryhu7.github.io/homecraft/worlds.json'],
+    directory: [],
   },
   // The small "Made with homecraft" badge by the radar.
   badge: true,

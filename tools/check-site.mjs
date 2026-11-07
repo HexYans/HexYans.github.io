@@ -14,7 +14,7 @@ import { inflateSync } from 'node:zlib';
 import { join, relative, resolve } from 'node:path';
 import { fileURLToPath, pathToFileURL } from 'node:url';
 import { engineFiles } from './engine-manifest.mjs';
-import { TEMPLATE_LOGO } from './directory.mjs';
+const TEMPLATE_LOGO = '55fd4562515e92c53e1bdc8bceccc6cd0b36b4abafef5941d687a36a0e0ade5e';
 
 const repo = fileURLToPath(new URL('../', import.meta.url));
 const site = resolve(process.argv[2] || repo);

@@ -9,7 +9,6 @@ const HUD = `
     <canvas width="220" height="220" aria-label="小地图，点一下就走过去" data-en-label="Minimap: tap to walk there"></canvas>
     <div class="zoom"><button data-zoom="in" aria-label="放大" data-en-label="Zoom in">+</button><button data-zoom="out" aria-label="缩小" data-en-label="Zoom out">−</button></div>
     <button class="expand" aria-label="打开大地图" data-en-label="Open the map"></button>
-    <a class="badge made" href="https://github.com/terryHu7/homecraft" target="_blank" rel="noopener" aria-label="Made with homecraft"><img data-icon="logo" alt="" width="16" height="16"><b>homecraft</b></a>
   </div>
   <div id="weatherMenu" aria-label="天气与时段" data-en-label="Weather and time" hidden>
     <p class="now">获取天气中</p>
