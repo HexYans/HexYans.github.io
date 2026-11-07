@@ -9,5 +9,5 @@ export default {
   mailbox: { endpoint: '', email: 'hexyans@gmail.com', turnstileSitekey: '' },
   // The portal's friend links come from our own list (worlds.json).
   portal: { directory: ['worlds.json'] },
-  badge: true,
+  badge: false,
 };
