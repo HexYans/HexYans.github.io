@@ -122,7 +122,7 @@ export function paintIdeasBoard(ctx, w, h) {
   ctx.restore();
 }
 
-// The black pegboard behind the desks: how Terry takes the world apart, one
+// The black pegboard behind the desks: how the world comes apart, one
 // visualisation per sheet. Geography on the left, markets on the right, the
 // middle left open for what comes next. Shapes only, no text or figures.
 export function paintPegboard(ctx, w, h) {
@@ -412,7 +412,7 @@ export function paintScoreboard(ctx, w, h, { made = 0, taken = 0, streak = 0 } =
   ctx.fillStyle = '#16191d';
   for (let y = 1; y < h; y += 3) for (let x = 1; x < w; x += 3) ctx.fillRect(x, y, 2, 2);
   const amber = '#ffb347', green = '#7fe0a4', white = '#f2f2ea';
-  const title = 'TERRY';
+  const title = 'HEXYANS';
   pixelText(ctx, title, Math.round((w - textWidth(title, 1)) / 2), 3, 1, white);
   const score = String(made).padStart(2, '0');
   pixelText(ctx, score, Math.round((w - textWidth(score, 3)) / 2), 13, 3, amber);
@@ -580,8 +580,9 @@ export function paintJersey(ctx, w, h, { edition = 'association' } = {}) {
   // Keep the chosen home shirt's name on one straight line, with name and
   // number shifted down together and clear of the back collar.
   ctx.save(); ctx.translate(0, 4);
-  [...'TERRY'].forEach((letter, i) => {
-    ctx.save(); ctx.translate(26 + i * 6, 26); ctx.scale(1, 1.3);
+  const name = 'HEXYANS', nameStep = 6, nameX = (80 - (name.length * nameStep - 1)) / 2;
+  [...name].forEach((letter, i) => {
+    ctx.save(); ctx.translate(nameX + i * nameStep, 26); ctx.scale(1, 1.3);
     pixelText(ctx, letter, 0, 0, 1, ink); ctx.restore();
   });
   ctx.beginPath(); ctx.moveTo(30, 39); ctx.lineTo(50, 39); ctx.lineTo(50, 45);
