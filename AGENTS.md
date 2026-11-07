@@ -56,12 +56,7 @@ npm install && npm run check    # Install dependencies and run site + browser ch
 - Local frame time only reflects the current machine's performance. Before publishing, ask the user to check the actual experience on their phone. See [docs/deploy.md](docs/deploy.md) for deployment steps.
 
 <!-- homecraft-updates:start -->
-## Homecraft Engine Updates
-
-- Follow [engine/UPDATING.md](engine/UPDATING.md) when asked to upgrade Homecraft or apply upstream fixes. Use releases from `terryHu7/homecraft`, not the fork's own releases.
-- When diagnosing a shared engine issue, check once for a relevant fix in the latest stable release. Report relevant updates without changing project files. Do not repeat notices for an unchanged release or apply unrelated upgrades.
-- Use the official updater. Preserve site layouts, content, configuration, assets, deployment files, and existing project rules. Resolve reported conflicts with the supplied files and continuation command.
-- Inspect the diff, test, and redeploy through the existing hosting setup. Directory listing does not update deployed code.
+<!-- This site customizes the engine on purpose and does not track upstream releases. -->
 <!-- homecraft-updates:end -->
 
 The browser console provides the following debug APIs:
